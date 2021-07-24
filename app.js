@@ -19,6 +19,7 @@ function clickHandler(event) {
       else {
         const profitLoss = (currentPrice.value - stockPrice.value) * quantity.value; //profit or loss amount 
         // it will be either profit amount or loss amount, as negetives also exists
+    
         const profitLossPercentage = (
           (profitLoss / (stockPrice.value * quantity.value)) *
           100
@@ -37,6 +38,7 @@ function clickHandler(event) {
             `${profitLossPercentage}` +
             "% profit. You gained ₹ " +
             `${profitLoss}`;
+
         }
       
       }
